@@ -367,5 +367,9 @@ module {{moduleName}}
         fail "unknown collection format: #{collection_format.inspect}"
       end
     end
+
+    def additional_header_params
+      #override this function if need more headers
+    end
   end
 end
